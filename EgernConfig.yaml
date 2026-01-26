@@ -5,7 +5,7 @@ url: https://github.com/honeyuee/ProxyConfiguration/edit/main/EgernConfig.yaml
 interval: 86400
 # 允许用户指定一个或多个DNS服务器的地址。当有请求查询这些特定DNS服务器地址中的记录时，系统将拦截这些请求，并返回一个假的IP地址。这样做的目的是确保后续的TCP和UDP流量可以通过这个虚假的IP地址来定位域名，以此来控制或修改网络流量的走向。默认值是空数组
 hijack_dns:
-- '*:53'
+  - '*:53'
 # 启用ipv6，值为true，默认为false
 ipv6: true
 # 允许外部连接通过 Wi-Fi 访问设备上的代理。默认值是 false
